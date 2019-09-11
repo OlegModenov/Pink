@@ -115,11 +115,11 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/less/**/*.less", gulp.series("css"));
-  gulp.watch("source/img/*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/less/**/*.less", gulp.series("css"));
   gulp.watch("source/js/*.js", gulp.series("js", "refresh"));
-  gulp.watch("source/img/*.png", gulp.series("copy", "refresh"));
+  gulp.watch("source/img/*.svg", gulp.series("sprite", "html", "refresh"));
+  // gulp.watch("source/img/*.{png,jpg}", gulp.series("copy", "images", "refresh"));
 });
 
 gulp.task("start", gulp.series("build", "server"));

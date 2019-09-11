@@ -14,3 +14,50 @@
     0 1px @white-transparent15,
     0 -1px @black;
 }
+
+.page-header__logo {
+  fill: @white;
+
+  &:hover {
+    fill: @red;
+  }
+
+  &:active {
+    fill: @white-transparent30;
+  }
+}
+
+.page-header__logo--tablet,
+.page-header__logo--desktop {
+  display: none;
+}
+
+.page-header__toggle {
+  width: 25px;
+  height: 25px;
+}
+
+@media (min-width: @tablet) {
+  .page-header__logo {
+    width: 146px;
+    height: 40px;
+  }
+
+  .page-header__logo--tablet {
+    display: block;
+  }
+
+  .page-header__logo--mobile {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop) {
+  .page-header__logo--tablet {
+    display: none;
+  }
+
+  .page-header__logo--desktop {
+    display: block;
+  }
+}

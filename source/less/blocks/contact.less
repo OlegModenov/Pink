@@ -1,0 +1,50 @@
+.contact {
+  padding-top: 50px;
+}
+
+.contact__title {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 240px;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.contact__message {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contact__data {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  width: 260px;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: @red;
+}
+
+.contact__kinds {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+
+    width: 0;
+    height: 0;
+
+    border-width: 35px 160px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: @white;
+  }
+}
+

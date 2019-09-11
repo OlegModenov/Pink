@@ -1,0 +1,17 @@
+.systems {
+  .list-mixin();
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 210px;
+}
+
+.systems__item {
+  margin-left: 37px;
+  margin-bottom: 5px;
+
+  &:nth-child(3n+1) {
+    margin-left: 0;
+  }
+}

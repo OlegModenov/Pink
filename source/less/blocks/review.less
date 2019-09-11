@@ -1,0 +1,43 @@
+.review {
+  position: relative;
+
+  padding-top: 50px;
+  padding-bottom: 40px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 0;
+    height: 0;
+
+    border-width: 13px 160px;
+    border-style: solid;
+    border-color: @white;
+    border-right-color: @grey;
+    border-bottom-color: @grey;
+  }
+}
+
+.review__author {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.review__author-desc {
+  display: none;
+}
+
+.review__quote {
+  margin: 0 auto;
+  width: 280px;
+
+  line-height: 30px;
+}

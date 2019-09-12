@@ -77,17 +77,20 @@
         <a class="btn download__link" href="#">Скачать приложение</a>
         <ul class="systems download__systems">
           <li class="systems__item">
-            <svg width="47" height="56">
+            <svg width="47" height="56" role="img" aria-labelledby="apple">
+              <title id="apple">иконка Apple</title>
               <use xlink:href="#icon-apple"></use>
             </svg>
           </li>
           <li class="systems__item">
-            <svg width="43" height="47">
+            <svg width="43" height="47" role="img" aria-labelledby="android">
+              <title id="android">иконка android</title>
               <use xlink:href="#icon-android"></use>
             </svg>
           </li>
           <li class="systems__item">
-            <svg width="44" height="41">
+            <svg width="44" height="41" role="img" aria-labelledby="microsoft">
+              <title id="microsoft">иконка microsoft</title>
               <use xlink:href="#icon-microsoft"></use>
             </svg>
           </li>
@@ -102,6 +105,13 @@
             <span class="advantages__title-offer">Нам есть, что вам предложить!</span>
           </h2>
         </div>
+
+        <div class="advantages__triangle-wrapper">
+          <svg class="advantages__triangle" width="320" height="35" viewbox="0 0 320 35">
+            <use xlink:href="#bg-triangle1"></use>
+          </svg>
+        </div>
+
         <div class="features">
           <ul class="features__list">
             <li class="features__item">
@@ -161,6 +171,12 @@
       </section>
 
       <section class="rate">
+        <div class="rate__triangle-wrapper">
+          <svg class="rate__triangle" width="320" height="26" viewbox="0 0 320 26">
+            <use xlink:href="#bg-triangle2"></use>
+          </svg>
+        </div>
+
         <table class="rate__table">
           <th>
           <td>База</td>
@@ -191,6 +207,12 @@
         </dl>
 
         <article class="map">
+
+            <svg class="map__triangle" width="320" height="35" viewbox="0 0 320 35">
+              <use xlink:href="#bg-triangle3"></use>
+            </svg>
+
+
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
               srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
@@ -203,6 +225,7 @@
             <img class="map__image" src="img/bg-map-mobile@1x.png 1x" srcset="img/bg-map-mobile@2x.png 2x"
               alt="Пинк карта">
           </picture>
+
           <svg class="map__marker" width="36" height="36" role="img" aria-labelledby="map-marker" focusable="false">
             <title id="map-marker">Маркер на карте</title>
             <use xlink:href="#icon-map-marker"></use>

@@ -6,25 +6,8 @@
   position: relative;
 
   padding-top: 45px;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   background-color: @white;
-
-  &::after {
-    content: "";
-
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    width: 0;
-    height: 0;
-
-    border-width: 16px 50%;
-    border-style: solid;
-    border-color: @white;
-    border-right-color: @grey;
-    border-bottom-color: @grey;
-  }
 }
 
 .advantages__title {
@@ -38,5 +21,17 @@
 .advantages__title-offer {
   display: block;
   margin-bottom: 35px;
+}
+
+.advantages__triangle-wrapper {
+  background-color: @white;
+}
+
+.advantages__triangle {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  fill: @grey;
 }
 

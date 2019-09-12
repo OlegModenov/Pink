@@ -44,11 +44,29 @@
 
 .page-header__toggle--closed {
   background-image: url("../img/icon-menu-cross.svg");
+
+  &:hover {
+    background-image: url("../img/icon-menu-cross-hover.svg");
+  }
+
+  &:active {
+    background-image: url("../img/icon-menu-cross-hover.svg");
+    opacity: 0.3;
+  }
 }
 
 .page-header__toggle--opened {
   background-image: url("../img/icon-menu-burger.svg");
   width: 55px;
+
+  &:hover {
+    background-image: url("../img/icon-menu-burger-hover.svg");
+  }
+
+  &:active {
+    background-image: url("../img/icon-menu-burger-hover.svg");
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet) {

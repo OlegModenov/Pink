@@ -107,7 +107,7 @@
         </div>
 
         <div class="advantages__triangle-wrapper">
-          <svg class="advantages__triangle" width="320" height="35" viewbox="0 0 320 35">
+          <svg class="advantages__triangle" width="320" height="34" viewbox="0 0 320 34">
             <use xlink:href="#bg-triangle1"></use>
           </svg>
         </div>
@@ -159,15 +159,24 @@
           <q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
             познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
         </p>
-        <button class="review__button review__button--active" type="button">
-          <span class="visually-hidden">Кнопка переключения</span>
-        </button>
-        <button class="review__button" type="button">
-          <span class="visually-hidden">Кнопка переключения</span>
-        </button>
-        <button class="review__button" type="button">
-          <span class="visually-hidden">Кнопка переключения</span>
-        </button>
+
+        <ul class="pagination">
+          <li class="pagination__item">
+            <button class="pagination__button pagination__button--current" type="button">
+              <span class="visually-hidden">Кнопка переключения</span>
+            </button>
+          </li>
+          <li class="pagination__item">
+            <button class="pagination__button" type="button">
+              <span class="visually-hidden">Кнопка переключения</span>
+            </button>
+          </li>
+          <li class="pagination__item">
+            <button class="pagination__button" type="button">
+              <span class="visually-hidden">Кнопка переключения</span>
+            </button>
+          </li>
+        </ul>
       </section>
 
       <section class="rate">
@@ -177,22 +186,107 @@
           </svg>
         </div>
 
-        <table class="rate__table">
-          <th>
-          <td>База</td>
-          <td>Стандарт</td>
-          <td>Анлим</td>
-          </th>
-          <tr>
-            <td>Розовый фильтр</td>
-          </tr>
-          <tr>
-            <td>Смайлики</td>
-          </tr>
-          <tr>
-            <td>Комментарии</td>
-          </tr>
-        </table>
+        <div class="rate__table-wrapper">
+          <table class="table rate__table">
+            <th class="table__title">
+            <td class="table__cell table__offer">
+              <span class="table__tariff">База</span>
+              <br>
+              <span class="table__price">1,99 USD</span>
+            </td>
+            <td class="table__cell table__offer table__hit">
+              <span class="table__tariff">Стандарт</span>
+              <br>
+              <span class="table__price">3,99 USD</span>
+            </td>
+            <td class="table__cell table__offer">
+              <span class="table__tariff">Анлим</span>
+              <br>
+              <span class="table__price">9,99 USD</span>
+            </td>
+            </th>
+            <tr>
+              <td class="table__cell">Розовый фильтр</td>
+              <td class="table__cell">
+                <span class="visually-hidden">Есть</span>
+                <svg class="table__yes" width="31" height="21">
+                  <use xlink:href="#icon-yes"></use>
+                </svg>
+              </td>
+              <td class="table__cell">
+                <span class="visually-hidden">Есть</span>
+                <svg class="table__yes" width="31" height="21">
+                  <use xlink:href="#icon-yes"></use>
+                </svg>
+              </td>
+              <td class="table__cell">
+                <span class="visually-hidden">Есть</span>
+                <svg class="table__yes" width="31" height="21">
+                  <use xlink:href="#icon-yes"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__cell">Смайлики</td>
+              <td class="table__cell">
+                <span class="visually-hidden">Нет</span>
+                <svg class="table__no" width="27" height="26">
+                  <use xlink:href="#icon-no"></use>
+                </svg>
+              </td>
+              <td class="table__cell">
+                <span class="visually-hidden">Есть</span>
+                <svg class="table__yes" width="31" height="21">
+                  <use xlink:href="#icon-yes"></use>
+                </svg>
+              </td>
+              <td class="table__cell">
+                <span class="visually-hidden">Есть</span>
+                <svg class="table__yes" width="31" height="21">
+                  <use xlink:href="#icon-yes"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__cell">Комментарии</td>
+              <td class="table__cell">
+                <span class="visually-hidden">Нет</span>
+                <svg class="table__no" width="27" height="26">
+                  <use xlink:href="#icon-no"></use>
+                </svg>
+              </td>
+              <td class="table__cell">
+                <span class="visually-hidden">Нет</span>
+                <svg class="table__no" width="27" height="26">
+                  <use xlink:href="#icon-no"></use>
+                </svg>
+              </td>
+              <td class="table__cell">
+                <svg class="table__yes" width="31" height="21">
+                  <use xlink:href="#icon-yes"></use>
+                </svg>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <ul class="pagination rate__pagination">
+          <li class="pagination__item">
+            <button class="pagination__button" type="button">
+              <span class="visually-hidden">Кнопка переключения</span>
+            </button>
+          </li>
+          <li class="pagination__item">
+            <button class="pagination__button pagination__button--current" type="button">
+              <span class="visually-hidden">Кнопка переключения</span>
+            </button>
+          </li>
+          <li class="pagination__item">
+            <button class="pagination__button" type="button">
+              <span class="visually-hidden">Кнопка переключения</span>
+            </button>
+          </li>
+        </ul>
       </section>
 
       <section class="contact">
@@ -208,9 +302,9 @@
 
         <article class="map">
 
-            <svg class="map__triangle" width="320" height="35" viewbox="0 0 320 35">
-              <use xlink:href="#bg-triangle3"></use>
-            </svg>
+          <svg class="map__triangle" width="320" height="35" viewbox="0 0 320 35">
+            <use xlink:href="#bg-triangle3"></use>
+          </svg>
 
 
           <picture>

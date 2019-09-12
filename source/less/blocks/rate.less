@@ -2,8 +2,13 @@
   background-color: @grey;
 }
 
+.rate__table {
+  width: 100%;
+}
+
 .rate__triangle-wrapper {
   background-color: @white;
+  margin-bottom: -1px;
 }
 
 .rate__triangle {
@@ -13,3 +18,20 @@
 
   fill: @grey;
 }
+
+.rate__table-wrapper {
+  border-top: 2px solid @grey; //скрывыет белую полоску после svg
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+.rate__pagination {
+  padding-bottom: 47px;
+}
+
+@media (min-width: @tablet) {
+  .rate__pagination {
+    display: none;
+  }
+}
+

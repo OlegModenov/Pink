@@ -1,0 +1,48 @@
+.table {
+  border-collapse: collapse;
+  background-color: @white;
+}
+
+.table__cell {
+  border: 3px solid @grey-darker;
+  padding: 15px;
+  width: 155px;
+
+  line-height: 30px;
+}
+
+.table__offer {
+  background-color: @black-blue;
+  border-color: @grey;
+  color: @white;
+  text-transform: uppercase;
+
+  &:not(:last-of-type) {
+    border-right-color: @grey-darker;
+  }
+}
+
+.table__tariff {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.table__hit {
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+}
+
+.table__price {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.table__title {
+  border: none;
+  border-top: 3px solid @grey;
+  background-color: @grey;
+}
+
+@media (min-width: @tablet) {
+  width: 620px;
+}

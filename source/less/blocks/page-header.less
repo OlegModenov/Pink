@@ -33,8 +33,22 @@
 }
 
 .page-header__toggle {
+  padding: 0;
+  border: 0;
   width: 25px;
   height: 25px;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.page-header__toggle--closed {
+  background-image: url("../img/icon-menu-cross.svg");
+}
+
+.page-header__toggle--opened {
+  background-image: url("../img/icon-menu-burger.svg");
+  width: 55px;
 }
 
 @media (min-width: @tablet) {

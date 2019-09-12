@@ -1,0 +1,40 @@
+.social__list {
+  .list-mixin();
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin: 0 auto;
+  width: 180px;
+}
+
+.social__item {
+  margin-left: 15px;
+  margin-bottom: 5px;
+
+  &:nth-child(3n+1) {
+    margin-left: 0;
+  }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 3px solid @black-transparent10;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+
+  fill: @red;
+  background-color: @white;
+
+  &:hover {
+    border-color: @black;
+  }
+
+  &:active {
+    fill: @red-transparent30;
+  }
+}

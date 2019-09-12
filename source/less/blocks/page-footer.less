@@ -1,9 +1,59 @@
-.page-footer--index {
+// .page-footer--index {
+//   display: none;
+// }
+
+.page-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.page-footer__logo {
+  margin-bottom: 40px;
+  width: 146px;
+  height: 40px;
+  fill: @black;
+
+  &:hover {
+    fill: @red;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__logo-glasses {
+  fill: @red;
+}
+
+.page-footer__logo--desktop {
   display: none;
+}
+
+.page-footer__social {
+  margin-bottom: 40px;
 }
 
 @media (min-width: @tablet) {
   .page-footer--index {
     display: block;
+  }
+}
+
+@media (min-width: @desktop) {
+  .page-footer__logo--desktop {
+    display: block;
+  }
+
+  .page-footer__logo--tablet {
+    display: none;
+  }
+
+  .page-footer__logo-stars {
+    fill: @black;
+
+    &:hover {
+      fill: @red;
+    }
   }
 }

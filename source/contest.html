@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Pink Form</title>
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/open-sans-300.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/open-sans-400.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/open-sans-700.woff2" as="font" crossorigin="anonymous">
@@ -27,81 +28,85 @@
       </div>
 
       <section class="contest">
-        <h2 class="contest__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
-          бонусную карту! Пожалуйста, заполните форму ниже:</h2>
+        <h2 class="contest__title">
+          <span>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+            бонусную карту!
+          </span>
+          <span class="contest__appeal"> Пожалуйста, заполните форму ниже:</span>
+        </h2>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="fieldset form__fio">
-            <legend class="visually-hidden">ФИО</legend>
-            <ul class="fieldset__list fio">
+          <fieldset class="fieldset fio form__fio">
+            <legend class="fio__legend">ФИО</legend>
+            <ul class="fio__list">
               <li class="fio__item">
                 <label class="label fio__label" for="surname">Фамилия:</label>
-                <input class="fio__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию *">
+                <input class="input fio__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию *">
               </li>
               <li class="fio__item">
                 <label class="label fio__label" for="name">Имя:</label>
-                <input class="fio__input" type="text" id="name" name="name" placeholder="Введите ваше имя *">
+                <input class="input fio__input" type="text" id="name" name="name" placeholder="Введите ваше имя *">
               </li>
               <li class="fio__item">
                 <label class="label fio__label" for="father-name">Отчество:</label>
-                <input class="fio__input" type="text" id="father-name" name="father-name"
+                <input class="input fio__input" type="text" id="father-name" name="father-name"
                   placeholder="Ну и отчество тоже">
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="fieldset form__achievements">
-            <legend class="fieldset__legend">
+          <fieldset class="fieldset achievements form__achievements">
+            <legend class="achievements__legend">
               <span>Ваши безбашенные достижения в путешествии</span>
             </legend>
-            <ul class="fieldset__list achievements">
+            <ul class="achievements__list">
               <li class="achievements__item">
                 <input class="achievements__checkbox visually-hidden" type="checkbox" id="selfie" name="selfie" checked>
-                <label class="achivments__label" for="selfie">Сделал селфи с Акулой </label>
+                <label class="achievements__label" for="selfie">Сделал селфи с Акулой </label>
               </li>
               <li class="achievements__item">
                 <input class="achievements__checkbox visually-hidden" type="checkbox" id="beach" name="beach" checked>
-                <label class="achivments__label" for="beach">Обгрел на пляже </label>
+                <label class="achievements__label" for="beach">Обгрел на пляже </label>
               </li>
               <li class="achievements__item">
                 <input class="achievements__checkbox visually-hidden" type="checkbox" id="Norris" name="Norris">
-                <label class="achivments__label" for="Norris">Видел Чака Норриса </label>
+                <label class="achievements__label" for="Norris">Видел Чака Норриса </label>
               </li>
               <li class="achievements__item">
                 <input class="achievements__checkbox visually-hidden" type="checkbox" id="souvenirs" name="souvenirs">
-                <label class="achivments__label" for="souvenirs">Накупил сувениров </label>
+                <label class="achievements__label" for="souvenirs">Накупил сувениров </label>
               </li>
               <li class="achievements__item">
                 <input class="achievements__checkbox visually-hidden" type="checkbox" id="tower" name="tower" checked>
-                <label class="achivments__label" for="tower">Удержал башню </label>
+                <label class="achievements__label" for="tower">Удержал башню </label>
               </li>
               <li class="achievements__item">
                 <input class="achievements__checkbox visually-hidden" type="checkbox" id="hotel" name="hotel">
-                <label class="achivments__label" for="hotel">Разгромил отель </label>
+                <label class="achievements__label" for="hotel">Разгромил отель </label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="fieldset form__contacts">
-            <legend class="fieldset__legend">Контактная информация</legend>
-            <ul class="fieldset__list contacts">
+          <fieldset class="fieldset contacts form__contacts">
+            <legend class="contacts__legend">Контактная информация</legend>
+            <ul class="contacts__list">
               <li class="contacts__item">
                 <label class="contacts__label" for="phone">Номер телефона</label>
-                <input class="contacts__input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста"
+                <input class="input contacts__input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста"
                   pattern="[0-9]{10}">
               </li>
               <li class="contacts__item">
                 <label class="contacts__label" for="mail">Электронная почта<sup>*</sup>:</label>
-                <input class="contacts__input" type="email" id="mail" name="mail" placeholder="Введите почту *"
+                <input class="input contacts__input" type="email" id="mail" name="mail" placeholder="Введите почту *"
                   required>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="fieldset form__app">
-            <legend class="fieldset__legend">
+          <fieldset class="fieldset app form__app">
+            <legend class="app__legend">
               <span>C каким приложением путешествовали?</span>
             </legend>
-            <ul class="fieldset__list app">
+            <ul class="app app__list">
               <li class="app__item">
                 <input class="app__radio visually-hidden" type="radio" id="ios" name="app" checked="">
                 <label class="app__label" for="ios">Pink для iOS</label>
@@ -117,16 +122,16 @@
             </ul>
           </fieldset>
 
-          <fieldset class="fieldset form__emotions">
-            <legend class="fieldset__legend">
+          <fieldset class="fieldset emotions form__emotions">
+            <legend class="emotions__legend">
               <span>Опишите свои эмоции</span>
             </legend>
-            <textarea class="emotions" rows="6" cols="28" name="emotions" id="emotions"
+            <textarea class="emotions__area" rows="6" cols="28" name="emotions" id="emotions"
               placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
 
           <button class="btn form__btn" type="submit">Отправить форму</button>
-          <p class="form__explanation">* &#8211; обязательные поля</p>
+          <p class="form__explanation"><span class="form__star">*</span> &#8211; обязательные поля</p>
         </form>
       </section>
     </main>

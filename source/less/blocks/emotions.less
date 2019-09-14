@@ -1,0 +1,35 @@
+.emotions {
+  padding-bottom: 48px;
+}
+
+.emotions__legend {
+  margin-bottom: 40px;
+  width: 240px;
+
+  color: @red;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+
+.emotions__area {
+  border: 2px solid @grey-darker;
+  padding: 20px;
+
+  width: 280px;
+  min-height: 200px;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: @black;
+  }
+
+  &:hover {
+    border-color: @black;
+  }
+
+  &:active {
+    border-color: @red;
+  }
+}

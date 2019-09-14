@@ -33,6 +33,7 @@
         <ul class="gallery__list">
           <li class="gallery__item gallery__item--big">
             <article class="post post--big">
+              <div class="post__label">Панорама дня</div>
               <a href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
@@ -275,54 +276,67 @@
       </section>
 
       <section class="your-post">
-        <h1 class="your-post__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h1>
-        <a href="#">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+        <h1 class="your-post__title">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</h1>
+        <div class="your-post__wrapper">
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
 
-            <source media="(min-width: 1200px)"
-              srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-            <img class="post__image" src="img/photo-sunset-mobile@1x.jpg"
-              srcset="img/photo-road-mobile@1x.jpg 1x, img/photo-road-mobile@2x.jpg 2x">
-          </picture>
-        </a>
-        <div class="your-post__filter filter">
-          <ul class="filter__list">
-            <li class="filter__item">
-              <svg class="filter__icon filter__icon--saturate" width="16" height="20" role="img"
-                aria-labelledby="saturate" focusable="false">
-                <title id="saturate">Насыщенность цвета</title>
-                <use xlink:href="#icon-filter-saturate"></use>
-              </svg>
-              <button class="filter__btn" type="button"></button>
-            </li>
-            <li class="filter__item">
-              <svg class="filter__icon filter__icon--fill" width="16" height="20" role="img" aria-labelledby="fill"
-                focusable="false">
-                <title id="fill">Заливка</title>
-                <use xlink:href="#icon-filter-fill"></use>
-              </svg>
-              <button class="filter__btn" type="button"></button>
-            </li>
-            <li class="filter__item">
-              <svg class="filter__icon filter__icon--contrast" width="16" height="20" role="img"
-                aria-labelledby="contrast" focusable="false">
-                <title id="contrast">Контраст</title>
-                <use xlink:href="#icon-filter-contrast"></use>
-              </svg>
-              <button class="filter__btn" type="button"></button>
-            </li>
-          </ul>
-        </div>
-        <div class="your-post__buttons">
-          <button class="btn" type="button">Запостить</button>
-          <button class="btn" type="button">Отмена</button>
+              <source media="(min-width: 1200px)"
+                srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="your-post__image" src="img/photo-sunset-mobile@1x.jpg"
+                srcset="img/photo-road-mobile@1x.jpg 1x, img/photo-road-mobile@2x.jpg 2x">
+            </picture>
+          </a>
+          <div class="your-post__filter filter">
+            <ul class="filter__list">
+              <li class="filter__item">
+                <button class="filter__btn" type="button">
+                  <svg class="filter__icon filter__icon--current filter__icon--saturate" width="16" height="20" role="img"
+                    aria-labelledby="saturate" focusable="false">
+                    <title id="saturate">Насыщенность цвета</title>
+                    <use xlink:href="#icon-filter-saturate"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="filter__item">
+
+                <button class="filter__btn" type="button">
+                    <svg class="filter__icon filter__icon--fill" width="16" height="20" role="img" aria-labelledby="fill"
+                    focusable="false">
+                    <title id="fill">Заливка</title>
+                    <use xlink:href="#icon-filter-fill"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="filter__item">
+
+                <button class="filter__btn" type="button">
+                    <svg class="filter__icon filter__icon--contrast" width="16" height="20" role="img"
+                    aria-labelledby="contrast" focusable="false">
+                    <title id="contrast">Контраст</title>
+                    <use xlink:href="#icon-filter-contrast"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="filter__scale">
+            <div class="filter__scale-stripe"></div>
+            <button class="filter__scale-button" type="button">
+              <span class="visually-hidden">Прокрутка</span>
+            </button>
+          </div>
+          <div class="your-post__buttons">
+            <button class="btn your-post__button" type="button">Запостить</button>
+            <button class="btn your-post__button" type="button">Отмена</button>
+          </div>
         </div>
       </section>
 

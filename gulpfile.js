@@ -71,6 +71,8 @@ gulp.task("images", function () {
   .pipe(gulp.dest("source/img"));
 });
 
+
+//Создание картинок формата webp
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
   .pipe(webp({quality: 75}))

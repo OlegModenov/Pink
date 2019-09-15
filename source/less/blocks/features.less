@@ -25,3 +25,32 @@
   display: block;
   margin: 0 auto;
 }
+
+@media (min-width: @tablet) {
+  .features {
+    display: flex;
+    padding: 0;
+  }
+
+  .features__list {
+    order: 2;
+    margin-top: 60px;
+    width: 60%;
+    text-align: left;
+  }
+
+  .features__desc {
+    margin: 0;
+    margin-bottom: 45px;
+    width: auto;
+  }
+
+  .features__item:last-of-type .features__desc {
+    margin-bottom: 0;
+  }
+
+  .features__img {
+    margin-left: 20px;
+    margin-right: 80px;
+  }
+}

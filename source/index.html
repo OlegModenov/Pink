@@ -58,13 +58,13 @@
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
                 srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
+              <source type="image/webp" media="(min-width: 660px)"
                 srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
 
               <source media="(min-width: 1200px)"
                 srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
-              <source media="(min-width: 768px)"
+              <source media="(min-width: 660px)"
                 srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
               <img class="promo__image" src="img/iphone-hand-mobile@1x.png 1x"
                 srcset="img/iphone-hand-mobile@2x.png 2x">
@@ -132,9 +132,17 @@
           </ul>
 
           <picture>
-            <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
-            <img class="features__img" src="img/iphone-screen-mobile@1x.png"
-              srcset="img/iphone-screen-mobile@2x.png 2x">
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/iphone-screen-desktop-3@1x.webp 1x, img/iphone-screen-desktop-3@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)"
+              srcset="img/iphone-screen-tablet@1x.webp 1x, img/iphone-screen-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1200px)" srcset="img/iphone-screen-desktop-3@1x.png 1x, img/iphone-screen-desktop-3@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/iphone-screen-tablet@1x.png 1x, img/iphone-screen-tablet@2x.png 2x">
+              <img class="features__img" src="img/iphone-screen-mobile@1x.png"
+              srcset="img/iphone-screen-mobile@2x.png 2x" alt="Экран телефона">
           </picture>
 
           <div class="advantages__effect effect">
@@ -301,21 +309,19 @@
         </dl>
 
         <article class="map">
-
           <svg class="map__triangle" width="320" height="35" viewbox="0 0 320 35">
             <use xlink:href="#bg-triangle3"></use>
           </svg>
 
-
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
               srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
+            <source type="image/webp" media="(min-width: 660px)"
               srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
 
             <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
             <img class="map__image" src="img/bg-map-mobile@1x.png 1x" srcset="img/bg-map-mobile@2x.png 2x"
               alt="Пинк карта">
           </picture>

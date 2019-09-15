@@ -14,7 +14,7 @@
   margin: 0 auto;
   width: 230px;
 
-  color: @black;
+  color: @black-blue;
 }
 
 .advantages__title-question,
@@ -33,5 +33,27 @@
   height: auto;
 
   fill: @grey;
+}
+
+@media (min-width: @tablet) {
+  .advantages__title {
+    margin-bottom: 50px;
+    width: 100%;
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .advantages__title-offer {
+    margin: 0 auto;
+    width: 350px;
+  }
+
+  .advantages__title-question {
+    margin-bottom: 0;
+  }
+
+  .advantages__triangle-wrapper {
+    margin-bottom: -50px;
+  }
 }
 

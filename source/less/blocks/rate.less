@@ -2,8 +2,19 @@
   background-color: @grey;
 }
 
-.rate__table {
+.rate__table-wrapper {
+  border-top: 2px solid @grey;
+  padding-top: 70px;
+  padding-bottom: 40px;
   width: 100%;
+  overflow: hidden;
+}
+
+.rate__table {
+  // margin-left: -540px;
+  // width: 1120px;
+  margin-left: -169%;
+  width: 350%;
 }
 
 .rate__triangle-wrapper {
@@ -19,19 +30,23 @@
   fill: @grey;
 }
 
-.rate__table-wrapper {
-  border-top: 2px solid @grey; //скрывыет белую полоску после svg
-  padding-top: 70px;
-  padding-bottom: 40px;
-}
-
 .rate__pagination {
   padding-bottom: 47px;
 }
 
 @media (min-width: @tablet) {
+  .rate__table {
+    margin: 0 auto;
+    width: 640px;
+  }
+
   .rate__pagination {
     display: none;
   }
 }
 
+@media (min-width: @desktop) {
+  .rate__table {
+    width: 940px;
+  }
+}

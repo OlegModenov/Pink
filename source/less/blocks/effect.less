@@ -1,3 +1,66 @@
 .effect {
   display: none;
 }
+
+@media (min-width: @tablet) {
+  .effect {
+    display: flex;
+    padding-top: 60px;
+    background-color: @white;
+  }
+
+  .effect__image {
+    position: relative;
+    width: 50%;
+  }
+
+  .effect__icon {
+    width: 298px;
+    height: 345px;
+    transform: scale(0.8) translate(-30px, -40px);
+  }
+
+  .effect__number {
+    position: absolute;
+    z-index: 1;
+    top: 140px;
+    left: 90px;
+
+    font-size: 96px;
+    font-weight: 700;
+    color: @red;
+  }
+
+  .effect__text {
+    order: 1;
+    margin-top: 20px;
+    width: 300px;
+
+    text-align: left;
+  }
+
+  .effect__title {
+    margin: 0;
+    margin-bottom: 25px;
+    width: 180px;
+
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .effect__desc {
+    margin-bottom: 20px;
+    line-height: 24px;
+  }
+
+  .effect__link {
+    text-decoration: underline;
+    color: @red;
+  }
+}
+
+@media (min-width: @desktop) {
+  .effect__icon {
+    transform: none;
+  }
+}

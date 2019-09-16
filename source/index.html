@@ -112,7 +112,7 @@
           </svg>
         </div>
 
-        <div class="features">
+        <div class="features advantages__features">
           <ul class="features__list">
             <li class="features__item">
               <h3 class="features__title">Поднимает настроение</h3>
@@ -136,28 +136,35 @@
               srcset="img/iphone-screen-desktop-3@1x.webp 1x, img/iphone-screen-desktop-3@2x.webp 2x">
             <source type="image/webp" media="(min-width: 660px)"
               srcset="img/iphone-screen-tablet@1x.webp 1x, img/iphone-screen-tablet@2x.webp 2x">
-            <source type="image/webp"
-              srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
 
-            <source media="(min-width: 1200px)" srcset="img/iphone-screen-desktop-3@1x.png 1x, img/iphone-screen-desktop-3@2x.png 2x">
-            <source media="(min-width: 660px)" srcset="img/iphone-screen-tablet@1x.png 1x, img/iphone-screen-tablet@2x.png 2x">
-              <img class="features__img" src="img/iphone-screen-mobile@1x.png"
-              srcset="img/iphone-screen-mobile@2x.png 2x" alt="Экран телефона">
+            <source media="(min-width: 1200px)"
+              srcset="img/iphone-screen-desktop-3@1x.png 1x, img/iphone-screen-desktop-3@2x.png 2x">
+            <source media="(min-width: 660px)"
+              srcset="img/iphone-screen-tablet@1x.png 1x, img/iphone-screen-tablet@2x.png 2x">
+            <img class="features__img" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x"
+              alt="Экран телефона">
           </picture>
+        </div>
 
-          <div class="advantages__effect effect">
-            <h3 class="effect__title">Эффект на 24 часа!</h3>
-            <svg class="effect__icon" width="238" height="276" role="img" aria-labelledby="timer" focusable="false">
+        <div class="effect advantages__effect">
+          <div class="effect__text">
+            <h3 class="effect__title">Эффект &nbsp; на 24 часа!</h3>
+            <p class="effect__desc">Британские ученые провели исследования и доказали,
+              что положительный эффект от использования приложения длится целые сутки!</p>
+            <p>
+              <a class="effect__link" href="#">Узнать больше об исследовании</a>
+            </p>
+          </div>
+          <div class="effect__image">
+            <div class="effect__number">24</div>
+            <svg class="effect__icon" role="img" aria-labelledby="timer" focusable="false">
               <title id="timer">Заливка</title>
               <use xlink:href="#icon-timer"></use>
             </svg>
-            <p class="effect__desc">Британские ученые провели исследования и доказали,
-              что положительный эффект от использования приложения длится целые сутки!</p>
-            <p class="effect__link">
-              <a href="#">Узнать больше об исследовании</a>
-            </p>
           </div>
         </div>
+
       </section>
 
       <section class="review">

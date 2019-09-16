@@ -25,3 +25,36 @@
 
   line-height: 30px;
 }
+
+@media (min-width: @tablet) {
+  .review {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review__author-wrapper {
+    order: 2;
+    margin-bottom: 40px;
+  }
+
+  .review__quote {
+    order: 1;
+    padding: 0 20px;
+    width: 100%;
+
+    font-size: 18px;
+  }
+
+  .review__author {
+    margin-bottom: 10px;
+  }
+
+  .review__author-desc {
+    display: block;
+    margin: 0;
+  }
+
+  .review__pagination {
+    order: 3;
+  }
+}

@@ -168,14 +168,16 @@
       </section>
 
       <section class="review">
-        <p class="review__author">Николай Петров</p>
-        <p class="review__author-desc">25 лет, водитель трамвая</p>
+        <div class="review__author-wrapper">
+          <p class="review__author">Николай Петров</p>
+          <p class="review__author-desc">25 лет, водитель трамвая</p>
+        </div>
         <p class="review__quote">
           <q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
             познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
         </p>
 
-        <ul class="pagination">
+        <ul class="pagination review__pagination">
           <li class="pagination__item">
             <button class="pagination__button pagination__button--current" type="button">
               <span class="visually-hidden">Кнопка переключения</span>
@@ -210,6 +212,10 @@
               <span class="table__price">1,99 USD</span>
             </td>
             <td class="table__cell table__offer table__hit">
+              <svg class="table__hit-label" width="74" height="73">
+                <use xlink:href="#bg-hit"></use>
+              </svg>
+              <span class="table__hit-text">ХИТ</span>
               <span class="table__tariff">Стандарт</span>
               <br>
               <span class="table__price">3,99 USD</span>

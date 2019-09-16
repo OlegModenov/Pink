@@ -28,8 +28,20 @@
 }
 
 .table__hit {
-  background-image: url("../img/bg-hit.svg");
-  background-repeat: no-repeat;
+  position: relative;
+}
+
+.table__hit-label {
+  position: absolute;
+  left: -3px;
+  top: 0;
+}
+
+.table__hit-text {
+  position: absolute;
+  left: 2%;
+
+  transform: rotate(-45deg);
 }
 
 .table__price {
@@ -43,5 +55,14 @@
   background-color: @grey;
 }
 
-// @media (min-width: @tablet) {
-// }
+@media (min-width: @tablet) {
+  .table__hit-label {
+    top: -6.5px;
+    left: -10px;
+    transform: scale(0.83);
+  }
+
+  .table__hit-text {
+    top: 5px;
+  }
+}

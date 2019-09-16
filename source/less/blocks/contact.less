@@ -28,3 +28,27 @@
   font-weight: 300;
   color: @red;
 }
+
+@media (min-width: @tablet) {
+  .contact__title {
+    margin-bottom: 55px;
+    width: 500px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .contact__kinds {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact__kind {
+    margin-bottom: 55px;
+    width: 50%;
+
+    &:last-of-type {
+      margin-bottom: 0;
+      width: 100%;
+    }
+  }
+}

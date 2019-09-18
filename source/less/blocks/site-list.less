@@ -30,7 +30,25 @@
 }
 
 @media (min-width: @desktop) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .site-list__item {
+    min-height: 40px;
+    box-shadow: none;
+  }
+
   .site-list__item--current {
     border-bottom: 2px solid @white;
+  }
+
+  .site-list__link {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 300;
+    text-transform: none;
   }
 }

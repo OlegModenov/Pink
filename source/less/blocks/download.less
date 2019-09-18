@@ -4,6 +4,10 @@
   background-color: @black-blue-dark;
 }
 
+.download__systems {
+  margin: 0 auto;
+}
+
 .download__link {
   display: block;
   margin: 0 auto;
@@ -30,13 +34,37 @@
 
 @media (min-width: @tablet) {
   .download {
-    position: relative;
+    position: absolute;
+    z-index: 1;
+    top: 670px;
+    left: 20px;
 
-    margin-top: -300px;
-    margin-left: 20px;
     padding-top: 0;
     width: 300px;
 
     background-color: transparent;
+  }
+
+  .download__link {
+    margin-bottom: 43px;
+  }
+
+  .download__systems {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .download {
+    left: 130px;
+    top: 470px;
+  }
+
+  .download__link {
+    margin-bottom: 68px;
+  }
+
+  .download__systems {
+    margin-bottom: 60px;
   }
 }

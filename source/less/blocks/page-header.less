@@ -70,6 +70,10 @@
 }
 
 @media (min-width: @tablet) {
+  .page-header__logo-wrapper {
+    min-height: 110px;
+  }
+
   .page-header__logo {
     width: 146px;
     height: 40px;
@@ -85,11 +89,33 @@
 }
 
 @media (min-width: @desktop) {
+  .page-header {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 130px;
+    min-height: 107px;
+    background-color: @black-transparent30;
+  }
+
+  .page-header__logo-wrapper {
+    margin-right: 170px;
+    padding: 0;
+    box-shadow: none;
+  }
+
   .page-header__logo--tablet {
     display: none;
   }
 
   .page-header__logo--desktop {
     display: block;
+  }
+
+  .page-header__toggle {
+    display: none;
   }
 }

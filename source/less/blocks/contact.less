@@ -52,3 +52,24 @@
     }
   }
 }
+
+@media (min-width: @desktop) {
+  .contact__kinds {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+
+  .contact__kind {
+    margin-bottom: 0;
+    width: 33%;
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:last-of-type {
+      width: 33%;
+      order: 2;
+    }
+  }
+}

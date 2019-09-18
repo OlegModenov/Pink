@@ -131,20 +131,40 @@
             </li>
           </ul>
 
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/iphone-screen-desktop-3@1x.webp 1x, img/iphone-screen-desktop-3@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)"
-              srcset="img/iphone-screen-tablet@1x.webp 1x, img/iphone-screen-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
+          <ul class="features__images">
+            <li class="features__image-item features__image-item--desktop">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/iphone-screen-desktop-1@1x.webp 1x, img/iphone-screen-desktop-1@2x.webp 2x">
+                <img class="features__img" src="img/iphone-screen-desktop-1@1x.png" srcset="img/iphone-screen-desktop-1@2x.png 2x"
+                  alt="Экран телефона">
+              </picture>
+            </li>
+            <li class="features__image-item features__image-item--desktop">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/iphone-screen-desktop-2@1x.webp 1x, img/iphone-screen-desktop-2@2x.webp 2x">
+                <img class="features__img" src="img/iphone-screen-desktop-2@1x.png" srcset="img/iphone-screen-desktop-2@2x.png 2x"
+                  alt="Экран телефона">
+              </picture>
+            </li>
+            <li class="features__image-item">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/iphone-screen-desktop-3@1x.webp 1x, img/iphone-screen-desktop-3@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/iphone-screen-tablet@1x.webp 1x, img/iphone-screen-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
 
-            <source media="(min-width: 1200px)"
-              srcset="img/iphone-screen-desktop-3@1x.png 1x, img/iphone-screen-desktop-3@2x.png 2x">
-            <source media="(min-width: 660px)"
-              srcset="img/iphone-screen-tablet@1x.png 1x, img/iphone-screen-tablet@2x.png 2x">
-            <img class="features__img" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x"
-              alt="Экран телефона">
-          </picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/iphone-screen-desktop-3@1x.png 1x, img/iphone-screen-desktop-3@2x.png 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/iphone-screen-tablet@1x.png 1x, img/iphone-screen-tablet@2x.png 2x">
+                <img class="features__img" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x"
+                  alt="Экран телефона">
+              </picture>
+            </li>
+          </ul>
         </div>
 
         <div class="effect advantages__effect">

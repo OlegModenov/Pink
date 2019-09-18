@@ -136,16 +136,16 @@
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
                   srcset="img/iphone-screen-desktop-1@1x.webp 1x, img/iphone-screen-desktop-1@2x.webp 2x">
-                <img class="features__img" src="img/iphone-screen-desktop-1@1x.png" srcset="img/iphone-screen-desktop-1@2x.png 2x"
-                  alt="Экран телефона">
+                <img class="features__img" src="img/iphone-screen-desktop-1@1x.png"
+                  srcset="img/iphone-screen-desktop-1@2x.png 2x" alt="Экран телефона">
               </picture>
             </li>
             <li class="features__image-item features__image-item--desktop">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
                   srcset="img/iphone-screen-desktop-2@1x.webp 1x, img/iphone-screen-desktop-2@2x.webp 2x">
-                <img class="features__img" src="img/iphone-screen-desktop-2@1x.png" srcset="img/iphone-screen-desktop-2@2x.png 2x"
-                  alt="Экран телефона">
+                <img class="features__img" src="img/iphone-screen-desktop-2@1x.png"
+                  srcset="img/iphone-screen-desktop-2@2x.png 2x" alt="Экран телефона">
               </picture>
             </li>
             <li class="features__image-item">
@@ -154,14 +154,15 @@
                   srcset="img/iphone-screen-desktop-3@1x.webp 1x, img/iphone-screen-desktop-3@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)"
                   srcset="img/iphone-screen-tablet@1x.webp 1x, img/iphone-screen-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
 
                 <source media="(min-width: 1200px)"
                   srcset="img/iphone-screen-desktop-3@1x.png 1x, img/iphone-screen-desktop-3@2x.png 2x">
                 <source media="(min-width: 660px)"
                   srcset="img/iphone-screen-tablet@1x.png 1x, img/iphone-screen-tablet@2x.png 2x">
-                <img class="features__img" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x"
-                  alt="Экран телефона">
+                <img class="features__img" src="img/iphone-screen-mobile@1x.png"
+                  srcset="img/iphone-screen-mobile@2x.png 2x" alt="Экран телефона">
               </picture>
             </li>
           </ul>
@@ -188,13 +189,22 @@
       </section>
 
       <section class="review">
+        <svg class="review__quotes" width="79" height="63">
+          <use xlink:href="#icon-quotes"></use>
+        </svg>
         <div class="review__author-wrapper">
           <p class="review__author">Николай Петров</p>
           <p class="review__author-desc">25 лет, водитель трамвая</p>
         </div>
-        <p class="review__quote">
-          <q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+        <p class="review__quote-wrapper">
+          <svg class="review__arrow-left" width="22" height="42">
+            <use xlink:href="#icon-arrow-left"></use>
+          </svg>
+          <q class="review__quote">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
             познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
+          <svg class="review__arrow-right" width="22" height="42">
+            <use xlink:href="#icon-arrow-right"></use>
+          </svg>
         </p>
 
         <ul class="pagination review__pagination">

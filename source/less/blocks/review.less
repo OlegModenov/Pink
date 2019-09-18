@@ -5,6 +5,10 @@
   padding-bottom: 40px;
 }
 
+.review__quotes {
+  display: none;
+}
+
 .review__author {
   margin: 0;
   margin-bottom: 25px;
@@ -18,7 +22,7 @@
   display: none;
 }
 
-.review__quote {
+.review__quote-wrapper {
   margin: 0 auto;
   margin-bottom: 35px;
   width: 280px;
@@ -37,7 +41,7 @@
     margin-bottom: 40px;
   }
 
-  .review__quote {
+  .review__quote-wrapper {
     order: 1;
     padding: 0 20px;
     width: 100%;
@@ -56,5 +60,34 @@
 
   .review__pagination {
     order: 3;
+  }
+}
+
+@media (min-width: @desktop) {
+  .review {
+    padding-top: 75px;
+  }
+
+  .review__quote-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+
+  .review__quote {
+    width: 60%;
+  }
+
+  .review__quotes {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 55px;
+  }
+
+  .review__pagination {
+    display: none;
   }
 }

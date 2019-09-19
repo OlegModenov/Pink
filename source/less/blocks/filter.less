@@ -85,12 +85,12 @@
     display: flex;
     align-items: center;
     margin-right: 0;
-    min-height: 70px;
+    min-height: 71px;
     border-bottom: 1px solid @grey-darker;
 
-    &:first-child {
-      min-height: 56px;
-    }
+    // &:first-child {
+    //   min-height: 56px;
+    // }
   }
 
   .filter__scale {
@@ -100,19 +100,20 @@
 
     display: flex;
     align-items: center;
-    width: 202px;
+    // width: 202px;
+    width: 100;
   }
 
   .filter__scale-button--contrast {
-    left: 100px;
+    left: 49%;
   }
 
   .filter__scale-button--fill {
-    left: 30px;
+    left: 9%;
   }
 
   .filter__scale-button--saturate {
-    left: 150px;
+    left: 75%;
   }
 
   .filter__btn {
@@ -130,5 +131,39 @@
   .filter__icon--contrast {
     width: 16px;
     height: 16px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .filter__btn {
+    margin-right: 50px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .filter__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .filter__icon--contrast {
+    width: 32px;
+    height: 32px;
+  }
+
+  .filter__scale {
+    width: 288px;
+  }
+
+  .filter__scale-button--contrast {
+    left: 30%;
+  }
+
+  .filter__scale-button--fill {
+    left: 90%;
+  }
+
+  .filter__scale-button--saturate {
+    left: 60%;
   }
 }

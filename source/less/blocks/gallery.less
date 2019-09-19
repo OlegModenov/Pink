@@ -42,19 +42,32 @@
   .gallery__item {
     display: flex;
     width: 48.5%;
-    // width: 300px;
-
-    // &:nth-child(2n) {
-    //   margin-left: 20px;
-    // }
-
-    // &:nth-child(2n+3) {
-    //   margin-right: 20px;
-    // }
   }
 
   .gallery__item--big {
     width: 100%;
     margin-bottom: 50px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .gallery__title {
+    padding-top: 100px;
+    padding-bottom: 93px;
+  }
+
+  .gallery__wrapper {
+    margin: 0 auto;
+    width: 940px;
+  }
+
+  .gallery__item {
+    margin-bottom: 54px;
+    width: 300px;
+  }
+
+  .gallery__item--big {
+    margin-bottom: 50px;
+    width: 100%;
   }
 }

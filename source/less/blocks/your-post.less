@@ -100,6 +100,8 @@
     justify-content: space-between;
     padding-top: 57px;
     padding-bottom: 56px;
+    padding-right: 3.03%;
+    padding-left: 3.03%;
 
     &::after {
       display: none;
@@ -112,12 +114,12 @@
 
   .your-post__filter {
     margin: 0 auto;
-    width: 280px;
+    width: 100%;
   }
 
   .your-post__image-wrapper {
     margin: 0;
-    width: 45.5%;
+    width: 48.5%;
   }
 
   .your-post__image {
@@ -125,15 +127,54 @@
   }
 
   .your-post__buttons {
-    padding-top: 60px;
+    padding-top: 24%;
+    width: 100%;
   }
 
   .your-post__button-post {
-    width: 260px;
+    width: 100%;
     margin-bottom: 30px;
   }
 
   .your-post__button-cancel {
-    width: 260px;
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop) {
+  .your-post__title {
+    padding-top: 15px;
+  }
+
+  .your-post__wrapper {
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 60px;
+    width: 940px;
+  }
+
+  .your-post__image-wrapper {
+    width: 300px;
+  }
+
+  .your-post__wrapper-tablet {
+    width: 415px;
+  }
+
+  .your-post__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 130px;
+  }
+
+  .your-post__button-post {
+    margin-bottom: 0;
+    width: 181px;
+    min-height: 52px;
+  }
+
+  .your-post__button-cancel {
+    width: 181px;
+    min-height: 52px;
   }
 }

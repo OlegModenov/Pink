@@ -2,7 +2,7 @@
   .list-mixin();
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 73px;
 }
 
 .filter__item {
@@ -36,12 +36,19 @@
 }
 
 .filter__scale {
-  position: relative;
+  display: none;
 
-  margin: 0 auto;
-  margin-bottom: 34px;
-  width: 240px;
+  position: absolute;
+  left: calc(50% - 160px);
+  bottom: 230px;
+
+  width: 320px;
   height: 14px;
+}
+
+.filter__item:first-child .filter__scale {
+  display: flex;
+  align-items: center;
 }
 
 .filter__scale-stripe {
@@ -53,7 +60,7 @@
 .filter__scale-button {
   position: absolute;
   left: 195px;
-  top: -6px;
+  top: 0;
 
   border: 2px solid @red;
   padding: 0;
@@ -65,5 +72,63 @@
 
   &:active {
     background-color: @red;
+  }
+}
+
+@media (min-width: @tablet) {
+  .filter__list {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .filter__item {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    min-height: 70px;
+    border-bottom: 1px solid @grey-darker;
+
+    &:first-child {
+      min-height: 56px;
+    }
+  }
+
+  .filter__scale {
+    position: relative;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    width: 202px;
+  }
+
+  .filter__scale-button--contrast {
+    left: 100px;
+  }
+
+  .filter__scale-button--fill {
+    left: 30px;
+  }
+
+  .filter__scale-button--saturate {
+    left: 150px;
+  }
+
+  .filter__btn {
+    margin-right: 30px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .filter__icon {
+    width: 24px;
+    height: 24px;
+    fill: @red;
+  }
+
+  .filter__icon--contrast {
+    width: 16px;
+    height: 16px;
   }
 }

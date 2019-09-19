@@ -36,10 +36,15 @@
   background-color: @white;
 }
 
-.your-post__image {
-  display: block;
+.your-post__image-wrapper {
   margin: 0 auto;
   margin-bottom: 42px;
+  width: 320px;
+}
+
+.your-post__image {
+  display: block;
+  width: 100%;
 }
 
 .your-post__buttons {
@@ -51,6 +56,7 @@
 .your-post__button-post {
   margin-bottom: 10px;
   width: 280px;
+  min-height: 55px;
   color: @red;
   border-color: @red;
 
@@ -67,6 +73,7 @@
 
 .your-post__button-cancel {
   width: 280px;
+  min-height: 55px;
   color: @grey-light;
   border-color: @grey-light;
 
@@ -78,5 +85,55 @@
   &:active {
     background-color: @grey-dark;
     border-color: @grey-dark;
+  }
+}
+
+@media (min-width: @tablet) {
+  .your-post__title {
+    padding-bottom: 70px;
+    width: 500px;
+    font-size: 18px;
+  }
+
+  .your-post__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 57px;
+    padding-bottom: 56px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .your-post__wrapper-tablet {
+    width: 42.42%;
+  }
+
+  .your-post__filter {
+    margin: 0 auto;
+    width: 280px;
+  }
+
+  .your-post__image-wrapper {
+    margin: 0;
+    width: 45.5%;
+  }
+
+  .your-post__image {
+    margin-bottom: 0;
+  }
+
+  .your-post__buttons {
+    padding-top: 60px;
+  }
+
+  .your-post__button-post {
+    width: 260px;
+    margin-bottom: 30px;
+  }
+
+  .your-post__button-cancel {
+    width: 260px;
   }
 }

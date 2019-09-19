@@ -24,6 +24,11 @@
 .filter__icon {
   width: 48px;
   height: 48px;
+  fill: @grey-dark;
+
+  &:hover {
+    fill: @grey-darkest;
+  }
 }
 
 .filter__icon--current {
@@ -57,4 +62,8 @@
 
   border-radius: 50%;
   background-color: @white;
+
+  &:active {
+    background-color: @red;
+  }
 }

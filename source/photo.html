@@ -20,11 +20,39 @@
 
   <div class="container">
     <header class="page-header">
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo-link" href="index.html">
+          <span class="visually-hidden"></span>
+          <svg class="page-header__logo" width="75" height="23" role="img">
+            <use xlink:href="#logo-header"></use>
+          </svg>
+        </a>
+        <button class="page-header__toggle page-header__toggle--closed page-header__toggle--nojs" type="button">
+          <span class="visually-hidden">Кнопка переключения</span>
+        </button>
+      </div>
+
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__link">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="contest.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <div class="promo">
-        <h1 class="title">Фотографии пользователей</h1>
+      <div class="promo promo--small">
+        <h1 class="title promo__title-photo">Фотографии пользователей</h1>
       </div>
 
       <section class="gallery">
@@ -298,8 +326,8 @@
             <ul class="filter__list">
               <li class="filter__item">
                 <button class="filter__btn" type="button">
-                  <svg class="filter__icon filter__icon--current filter__icon--saturate" width="16" height="20" role="img"
-                    aria-labelledby="saturate" focusable="false">
+                  <svg class="filter__icon filter__icon--current" width="16" height="20"
+                    role="img" aria-labelledby="saturate" focusable="false">
                     <title id="saturate">Насыщенность цвета</title>
                     <use xlink:href="#icon-filter-saturate"></use>
                   </svg>
@@ -308,7 +336,7 @@
               <li class="filter__item">
 
                 <button class="filter__btn" type="button">
-                    <svg class="filter__icon filter__icon--fill" width="16" height="20" role="img" aria-labelledby="fill"
+                  <svg class="filter__icon" width="16" height="20" role="img" aria-labelledby="fill"
                     focusable="false">
                     <title id="fill">Заливка</title>
                     <use xlink:href="#icon-filter-fill"></use>
@@ -318,7 +346,7 @@
               <li class="filter__item">
 
                 <button class="filter__btn" type="button">
-                    <svg class="filter__icon filter__icon--contrast" width="16" height="20" role="img"
+                  <svg class="filter__icon" width="16" height="20" role="img"
                     aria-labelledby="contrast" focusable="false">
                     <title id="contrast">Контраст</title>
                     <use xlink:href="#icon-filter-contrast"></use>
@@ -334,8 +362,8 @@
             </button>
           </div>
           <div class="your-post__buttons">
-            <button class="btn your-post__button" type="button">Запостить</button>
-            <button class="btn your-post__button" type="button">Отмена</button>
+            <button class="btn your-post__button-post" type="button">Запостить</button>
+            <button class="btn your-post__button-cancel" type="button">Отмена</button>
           </div>
         </div>
       </section>
@@ -343,6 +371,51 @@
     </main>
 
     <footer class="page-footer">
+      <div class="page-footer__logo-wrapper">
+        <a class="page-footer__logo-link">
+          <span class="visually-hidden"></span>
+          <svg class="page-footer__logo" width="75" height="23" role="img">
+            <use xlink:href="#logo-footer"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Твиттер</span>
+              <svg width="18" height="14" role="img">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg width="9" height="18" role="img">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Ютуб</span>
+              <svg width="15" height="13" role="img">
+                <use xlink:href="#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <strong class="copyright__text">Разработано</strong>
+        <a class="copyright__link" href="#">
+          <span class="visually-hidden">HTML Academy</span>
+          <svg class="copyright__icon" width="27" height="34" role="img">
+            <use xlink:href="#icon-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
     </footer>
   </div>
   <!-- <script src="js/myjs.js"></script> -->

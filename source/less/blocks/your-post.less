@@ -1,6 +1,6 @@
 .your-post {
   margin: 0 auto;
-  width: 320px;
+  width: 100%;
 }
 
 .your-post__wrapper {
@@ -38,13 +38,45 @@
 
 .your-post__image {
   display: block;
+  margin: 0 auto;
   margin-bottom: 42px;
 }
 
 .your-post__buttons {
+  margin: 0 auto;
   padding-top: 38px;
+  width: 300px;
 }
 
-.your-post__button {
+.your-post__button-post {
+  margin-bottom: 10px;
   width: 280px;
+  color: @red;
+  border-color: @red;
+
+  &:hover {
+    color: @white;
+    background-color: @red;
+  }
+
+  &:active {
+    background-color: @red;
+    color: @white-transparent30;
+  }
+}
+
+.your-post__button-cancel {
+  width: 280px;
+  color: @grey-light;
+  border-color: @grey-light;
+
+  &:hover {
+    color: @grey-dark;
+    border-color: @grey-dark;
+  }
+
+  &:active {
+    background-color: @grey-dark;
+    border-color: @grey-dark;
+  }
 }

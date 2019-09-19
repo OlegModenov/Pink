@@ -13,3 +13,48 @@
 .gallery__item {
   margin-bottom: 20px;
 }
+
+@media (min-width: @tablet) {
+  .gallery__title {
+    margin: 0 auto;
+    width: 600px;
+    font-size: 18px;
+  }
+
+  .gallery__br {
+    display: none;
+  }
+
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 3%;
+    margin-left: 3%;
+    width: 100%;
+  }
+
+  .gallery__item {
+    display: flex;
+    width: 48.5%;
+    // width: 300px;
+
+    // &:nth-child(2n) {
+    //   margin-left: 20px;
+    // }
+
+    // &:nth-child(2n+3) {
+    //   margin-right: 20px;
+    // }
+  }
+
+  .gallery__item--big {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}

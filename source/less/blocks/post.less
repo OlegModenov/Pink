@@ -1,5 +1,6 @@
 .post {
   padding: 0 6.25%;
+  width: 100%;
 }
 
 .post--big {
@@ -35,7 +36,7 @@
 .post__wrapper {
   padding: 25px 18px;
   padding-bottom: 20px;
-  width: 87.5%;
+  width: 100%;
 
   background-color: @grey;
   text-align: left;
@@ -44,10 +45,6 @@
 .post__wrapper--big {
   margin: 0 auto;
   width: 87.5%;
-}
-
-.post__text {
-  margin: 0;
 }
 
 .post__author {
@@ -90,4 +87,59 @@
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+@media (min-width: @tablet) {
+  .post {
+    position: relative;
+
+    //чтобы растянуть post__wrapper
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+  }
+
+  .post__label {
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    margin: 0;
+  }
+
+  .post__wrapper {
+    flex-grow: 1;
+
+    //чтобы сместить вниз plst__likes-wrapper
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post__wrapper--big {
+    position: relative;
+
+    padding-right: 30px;
+    padding-left: 30px;
+    width: 94%;
+  }
+
+  .post__likes-wrapper {
+    justify-content: space-between;
+    margin-top: auto;
+  }
+
+  .post__likes-wrapper--big {
+    position: absolute;
+    right: 28px;
+    top: 30px;
+  }
+
+  .post__btn {
+    order: 1;
+    margin-right: 0;
+  }
+
+  .post__likes {
+    margin-right: 18px;
+  }
 }

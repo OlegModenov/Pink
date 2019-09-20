@@ -1,9 +1,12 @@
 .contacts {
+  padding-top: 43px;
   padding-bottom: 15px;
 }
 
 .contacts__list {
   .list-mixin();
+  margin: 0 auto;
+  width: 280px;
 }
 
 .contacts__legend {
@@ -14,6 +17,10 @@
   margin-bottom: 28px;
 }
 
+.contacts__icon-wrapper {
+  display: none;
+}
+
 .contacts__label {
   display: block;
   margin-left: 20px;
@@ -22,4 +29,38 @@
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet) {
+  .contacts__legend {
+    display: block;
+  }
+
+  .contacts__list {
+    width: 500px;
+  }
+
+  .contacts__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__input {
+    order: -1;
+    margin-bottom: 10px;
+    width: 500px;
+  }
+
+  .contacts__icon-wrapper {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+    background-color: @grey-darker;
+  }
 }

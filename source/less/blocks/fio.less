@@ -1,9 +1,14 @@
 .fio {
+  margin: 0 auto;
   padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .fio__list {
   .list-mixin();
+  margin: 0 auto;
+  width: 280px;
 }
 
 .fio__legend {
@@ -22,4 +27,31 @@
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet) {
+  .fio {
+    border: none;
+    padding: 0;
+    padding-bottom: 34px;
+  }
+
+  .fio__list {
+    width: 620px;
+  }
+
+  .fio__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .fio__label {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  .fio__input {
+    flex-grow: 1;
+  }
 }

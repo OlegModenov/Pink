@@ -1,18 +1,19 @@
 .app {
-  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: @grey;
+  border-top: 114px solid @grey;
 }
 
 .app__legend {
   margin-bottom: 40px;
-  width: 240px;
-
-  color: @red;
-  text-transform: uppercase;
-  line-height: 18px;
 }
 
 .app__list {
   .list-mixin();
+  margin: 0 auto;
+  border: none;
+  width: 280px;
 }
 
 .app__item {
@@ -57,4 +58,19 @@
 
 .app__radio:checked ~ .app__label::before {
   background-image: url("../img/icon-circle.svg");
+}
+
+@media (min-width: @tablet) {
+  .app {
+    border-top: 2px solid @grey-darker;
+    padding: 0;
+    padding-left: 60px;
+    background-color: @white;
+  }
+
+  .app__list {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
 }

@@ -1,18 +1,19 @@
 .achievements {
-  padding-bottom: 40px;
+  // padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: @grey;
+  border-top: 114px solid @grey;
 }
 
 .achievements__legend {
   margin-bottom: 40px;
-  width: 240px;
-
-  color: @red;
-  text-transform: uppercase;
-  line-height: 18px;
 }
 
 .achievements__list {
   .list-mixin();
+  margin: 0 auto;
+  width: 280px;
 }
 
 .achievements__item {
@@ -52,10 +53,31 @@
   &:active::before {
     border-color: @red;
   }
+
+  &:focus::before {
+    outline-color: @red;
+    outline-offset: -2px;
+    outline-style: auto;
+    outline-width: 5px;
+  }
 }
 
 .achievements__checkbox:checked ~ .achievements__label::before {
-  background-image: url("../img/icon-yes.svg");
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+
+@media (min-width: @tablet) {
+  .achievements {
+    border-top: 2px solid @grey-darker;
+    padding: 0;
+    padding-left: 60px;
+    background-color: @white;
+  }
+
+  .achievements__list {
+    margin: 0;
+  }
 }

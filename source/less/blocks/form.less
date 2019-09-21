@@ -7,14 +7,6 @@
   border-radius: 0;
 }
 
-.form__star {
-  color: @red;
-}
-
-.form__explanation {
-  text-transform: uppercase;
-}
-
 @media (min-width: @tablet) {
   .form {
     margin: 0 auto;
@@ -49,9 +41,14 @@
   .form__btn {
     width: 300px;
   }
+}
 
-  .form__explanation {
-    width: 300px;
-    text-align: right;
+@media (min-width: @desktop) {
+  .form {
+    width: 940px;
+  }
+
+  .form__fio {
+    margin-bottom: 60px;
   }
 }

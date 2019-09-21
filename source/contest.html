@@ -86,27 +86,27 @@
               <span>Ваши безбашенные достижения в путешествии</span>
             </legend>
             <ul class="achievements__list">
-              <li class="achievements__item">
+              <li class="achievements__item achievements__item--1">
                 <input class="achievements__checkbox visually-hidden" type="checkbox" id="selfie" name="selfie" checked>
                 <label class="achievements__label" for="selfie">Сделал селфи с Акулой </label>
               </li>
-              <li class="achievements__item">
+              <li class="achievements__item achievements__item--2">
                 <input class="achievements__checkbox visually-hidden" type="checkbox" id="beach" name="beach" checked>
                 <label class="achievements__label" for="beach">Обгрел на пляже </label>
               </li>
-              <li class="achievements__item">
+              <li class="achievements__item achievements__item--3">
                 <input class="achievements__checkbox visually-hidden" type="checkbox" id="Norris" name="Norris">
                 <label class="achievements__label" for="Norris">Видел Чака Норриса </label>
               </li>
-              <li class="achievements__item">
+              <li class="achievements__item achievements__item--4">
                 <input class="achievements__checkbox visually-hidden" type="checkbox" id="souvenirs" name="souvenirs">
                 <label class="achievements__label" for="souvenirs">Накупил сувениров </label>
               </li>
-              <li class="achievements__item">
+              <li class="achievements__item achievements__item--5">
                 <input class="achievements__checkbox visually-hidden" type="checkbox" id="tower" name="tower" checked>
                 <label class="achievements__label" for="tower">Удержал башню </label>
               </li>
-              <li class="achievements__item">
+              <li class="achievements__item achievements__item--6">
                 <input class="achievements__checkbox visually-hidden" type="checkbox" id="hotel" name="hotel">
                 <label class="achievements__label" for="hotel">Разгромил отель </label>
               </li>
@@ -168,12 +168,15 @@
           </fieldset>
 
           <button class="btn form__btn" type="submit">Отправить форму</button>
-          <p class="form__explanation"><span class="form__star">*</span> &#8211; обязательные поля</p>
+          <p class="form__explanation explanation">
+            <span class="explanation__star">*</span> &#8211;
+            обязательные <span class="explanation__desktop-span">для заполнения </span> поля
+          </p>
         </form>
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--contest">
       <div class="page-footer__logo-wrapper">
         <a class="page-footer__logo-link">
           <span class="visually-hidden"></span>

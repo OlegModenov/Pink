@@ -80,4 +80,61 @@
   .achievements__list {
     margin: 0;
   }
+
+  .achievements__label {
+    padding-left: 60px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .achievements__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 820px;
+  }
+
+  .achievements__item {
+    &--1 {
+      order: 1;
+      width: 315px;
+    }
+
+    &--2 {
+      order: 4;
+      width: 315px;
+    }
+
+    &--3 {
+      order: 2;
+      width: 290px;
+    }
+
+    &--4 {
+      order: 5;
+      width: 290px;
+    }
+
+    &--5 {
+      order: 3;
+      width: 215px;
+    }
+
+    &--6 {
+      order: 6;
+      width: 215px;
+    }
+
+    // &:nth-child(3n + 1) {
+    //   width: 315px;
+    // }
+
+    // &:nth-child(3n + 2) {
+    //   width: 290px;
+    // }
+
+    // &:nth-child(3n + 3) {
+    //   width: 215px;
+    // }
+  }
 }

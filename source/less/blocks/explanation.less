@@ -1,0 +1,28 @@
+.explanation__star {
+  color: @red;
+}
+
+.explanation {
+  text-transform: uppercase;
+}
+
+.explanation__desktop-span {
+  display: none;
+}
+
+@media (min-width: @tablet) {
+  .explanation {
+    width: 300px;
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop) {
+  .explanation {
+    width: 470px;
+  }
+
+  .explanation__desktop-span {
+    display: inline;
+  }
+}

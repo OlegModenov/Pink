@@ -55,3 +55,24 @@
     flex-grow: 1;
   }
 }
+
+@media (min-width: @desktop) {
+  .fio {
+    margin: 0;
+    margin-top: 20px;
+    padding-bottom: 0;
+    width: 435px;
+  }
+
+  .fio__list {
+    width: 100%;
+  }
+
+  .fio__item {
+    margin-bottom: 56px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

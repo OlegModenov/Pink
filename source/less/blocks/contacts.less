@@ -64,3 +64,23 @@
     background-color: @grey-darker;
   }
 }
+
+@media (min-width: @desktop) {
+  .contacts__list {
+    display: flex;
+    width: 820px;
+  }
+
+  .contacts__item {
+    margin-bottom: 0;
+    width: 375px;
+
+    &:first-child {
+      margin-right: 70px;
+    }
+  }
+
+  .contacts__input {
+    width: 100%;
+  }
+}

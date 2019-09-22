@@ -5,3 +5,18 @@
 .main-nav__list {
   .list-mixin();
 }
+
+@media (max-width: @desktop - 1px) {
+  .main-nav--closed {
+    display: none;
+  }
+
+  .main-nav--opened {
+    display: block;
+  }
+
+  .main-nav--nojs {
+    display: block;
+  }
+}
+

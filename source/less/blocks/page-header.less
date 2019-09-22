@@ -1,4 +1,14 @@
 .page-header {
+  position: relative;
+  z-index: 1;
+  background-color: @black-blue;
+}
+
+.page-header--closed {
+  background-color: @black-transparent30;
+}
+
+.page-header--opened {
   background-color: @black-blue;
 }
 
@@ -42,7 +52,7 @@
   background-repeat: no-repeat;
 }
 
-.page-header__toggle--closed {
+.page-header__toggle--opened {
   background-image: url("../img/icon-menu-cross.svg");
 
   &:hover {
@@ -55,7 +65,7 @@
   }
 }
 
-.page-header__toggle--opened {
+.page-header__toggle--closed {
   background-image: url("../img/icon-menu-burger.svg");
   width: 55px;
 
@@ -67,6 +77,10 @@
     background-image: url("../img/icon-menu-burger-hover.svg");
     opacity: 0.3;
   }
+}
+
+.page-header__toggle--nojs {
+  display: none;
 }
 
 @media (min-width: @tablet) {

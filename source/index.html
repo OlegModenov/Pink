@@ -18,7 +18,7 @@
     <include src="build/img/sprite.svg"></include>
   </div>
 
-  <header class="page-header">
+  <header class="page-header page-header--closed page-header--nojs">
     <div class="page-header__logo-wrapper">
       <a class="page-header__logo-link">
         <span class="visually-hidden"></span>
@@ -65,7 +65,8 @@
               srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
             <source media="(min-width: 660px)"
               srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
-            <img class="promo__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Айфон">
+            <img class="promo__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x"
+              alt="Айфон">
           </picture>
         </a>
       </div>
@@ -368,22 +369,29 @@
           <use xlink:href="#bg-triangle3"></use>
         </svg>
 
-        <picture>
-          <source type="image/webp" media="(min-width: 1200px)"
-            srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 660px)"
-            srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+        <a href="#" class="map__link">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)"
+              srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
 
-          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-          <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Пинк карта">
-        </picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
+              alt="Пинк карта">
+          </picture>
+        </a>
 
         <svg class="map__marker" width="36" height="36" role="img" aria-labelledby="map-marker" focusable="false">
           <title id="map-marker">Маркер на карте</title>
           <use xlink:href="#icon-map-marker"></use>
         </svg>
+
+        <iframe class="map__interactive map__interactive--nojs"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858715621092!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1569057758605!5m2!1sru!2sru"
+          width="320" height="200" frameborder="0" style="border: 0;" allowfullscreen=""></iframe>
       </article>
     </section>
   </main>
@@ -435,7 +443,7 @@
       </a>
     </div>
   </footer>
-  <!-- <script src="js/myjs.js"></script> -->
+  <script src="js/myjs.js"></script>
 </body>
 
 </html>

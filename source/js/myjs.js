@@ -6,9 +6,8 @@ var header = document.querySelector(".page-header");
 toggle.classList.remove("page-header__toggle--nojs");
 navigation.classList.remove("main-nav--nojs");
 
-header.classList.remove("page-header__nojs");
-header.classList.remove("page-header--closed");
-header.classList.add("page-header--opened");
+header.classList.remove("page-header--opened");
+header.classList.add("page-header--closed");
 
 toggle.addEventListener("click", function (evt) {
   evt.preventDefault();

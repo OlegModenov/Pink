@@ -18,7 +18,7 @@
     <include src="build/img/sprite.svg"></include>
   </div>
 
-  <header class="page-header page-header--closed page-header--nojs">
+  <header class="page-header page-header--opened">
     <div class="page-header__logo-wrapper">
       <a class="page-header__logo-link">
         <span class="visually-hidden"></span>
@@ -50,54 +50,56 @@
   </header>
 
   <main>
-    <div class="promo">
-      <h1 class="title promo__title-index">Взгляните на жизнь иначе!</h1>
-      <div class="promo__image-wrapper">
-        <a href="#">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)"
-              srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
+    <div class="wrapper">
+      <div class="promo">
+        <h1 class="title promo__title-index">Взгляните на жизнь иначе!</h1>
+        <div class="promo__image-wrapper">
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
 
-            <source media="(min-width: 1200px)"
-              srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
-            <source media="(min-width: 660px)"
-              srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
-            <img class="promo__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x"
-              alt="Айфон">
-          </picture>
-        </a>
+              <source media="(min-width: 1200px)"
+                srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+              <img class="promo__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x"
+                alt="Айфон">
+            </picture>
+          </a>
+        </div>
       </div>
-    </div>
 
-    <section class="download">
-      <h2 class="download__title">
-        <a class="btn download__link" href="#">Скачать приложение</a>
-      </h2>
-      <ul class="systems download__systems">
-        <li class="systems__item">
-          <svg width="47" height="56" role="img" aria-labelledby="apple">
-            <title id="apple">иконка Apple</title>
-            <use xlink:href="#icon-apple"></use>
-          </svg>
-        </li>
-        <li class="systems__item">
-          <svg width="43" height="47" role="img" aria-labelledby="android">
-            <title id="android">иконка android</title>
-            <use xlink:href="#icon-android"></use>
-          </svg>
-        </li>
-        <li class="systems__item">
-          <svg width="44" height="41" role="img" aria-labelledby="microsoft">
-            <title id="microsoft">иконка microsoft</title>
-            <use xlink:href="#icon-microsoft"></use>
-          </svg>
-        </li>
-      </ul>
-      <p class="download__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </section>
+      <section class="download">
+        <h2 class="download__title">
+          <a class="btn download__link" href="#">Скачать приложение</a>
+        </h2>
+        <ul class="systems download__systems">
+          <li class="systems__item">
+            <svg width="47" height="56" role="img" aria-labelledby="apple">
+              <title id="apple">иконка Apple</title>
+              <use xlink:href="#icon-apple"></use>
+            </svg>
+          </li>
+          <li class="systems__item">
+            <svg width="43" height="47" role="img" aria-labelledby="android">
+              <title id="android">иконка android</title>
+              <use xlink:href="#icon-android"></use>
+            </svg>
+          </li>
+          <li class="systems__item">
+            <svg width="44" height="41" role="img" aria-labelledby="microsoft">
+              <title id="microsoft">иконка microsoft</title>
+              <use xlink:href="#icon-microsoft"></use>
+            </svg>
+          </li>
+        </ul>
+        <p class="download__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+    </div>
 
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества Пинк</h2>

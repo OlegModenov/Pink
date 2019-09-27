@@ -1,7 +1,8 @@
 .form__btn {
-  margin-bottom: 45px;
+  margin-bottom: 25px;
   width: 280px;
-  min-height: 61px;
+  min-height: 63px;
+  text-transform: uppercase;
   background-color: @green;
   border: none;
   border-radius: 0;
@@ -13,6 +14,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-bottom: 20px;
     width: 620px;
   }
 
@@ -22,16 +24,16 @@
 
   .form__app {
     order: -3;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
   }
 
   .form__contacts {
     order: -2;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
   }
 
   .form__achievements {
-    margin-bottom: 60px;
+    margin-bottom: 35px;
   }
 
   .form__emotions {
@@ -46,9 +48,20 @@
 @media (min-width: @desktop) {
   .form {
     width: 940px;
+    padding-bottom: 0;
   }
 
   .form__fio {
-    margin-bottom: 60px;
+    margin: 0;
+    margin-top: 12px;
+    margin-bottom: 57px;
+  }
+
+  .form__emotions {
+    margin-bottom: 65px;
+  }
+
+  .form__btn {
+    margin-bottom: 0;
   }
 }

@@ -19,7 +19,7 @@
 .achievements__item {
   display: flex;
   align-items: center;
-  margin-bottom: 43px;
+  margin-bottom: 45px;
   min-height: 37px;
 
   text-align: left;
@@ -74,7 +74,13 @@
     border-top: 2px solid @grey-darker;
     padding: 0;
     padding-left: 60px;
+    padding-bottom: 5px;
     background-color: @white;
+  }
+
+  .achievements__legend {
+    margin-bottom: 44px;
+    width: 500px;
   }
 
   .achievements__list {
@@ -82,11 +88,15 @@
   }
 
   .achievements__label {
-    padding-left: 60px;
+    padding-left: 57px;
   }
 }
 
 @media (min-width: @desktop) {
+  .achievements {
+    padding-bottom: 10px;
+  }
+
   .achievements__list {
     display: flex;
     flex-wrap: wrap;

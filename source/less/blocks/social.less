@@ -24,8 +24,8 @@
 
   border: 3px solid @black-transparent10;
   border-radius: 50%;
-  width: 45px;
-  height: 45px;
+  width: 48px;
+  height: 48px;
 
   fill: @red;
   background-color: @white;
@@ -36,5 +36,17 @@
 
   &:active {
     fill: @red-transparent30;
+  }
+}
+
+@media (min-width: @tablet) {
+  .social__list {
+    margin-right: 18px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .social__list {
+    margin-right: 0;
   }
 }

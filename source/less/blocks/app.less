@@ -58,8 +58,15 @@
   }
 }
 
-.app__radio:checked ~ .app__label::before {
+.app__radio:checked + .app__label::before {
   background-image: url("../img/icon-circle.svg");
+}
+
+.app__radio:focus + .app__label::before {
+  outline-color: @outline-color;
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
 }
 
 @media (min-width: @tablet) {

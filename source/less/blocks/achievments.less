@@ -62,10 +62,17 @@
   }
 }
 
-.achievements__checkbox:checked ~ .achievements__label::before {
+.achievements__checkbox:checked + .achievements__label::before {
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.achievements__checkbox:focus + .achievements__label::before {
+  outline-color: @outline-color;
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
 }
 
 

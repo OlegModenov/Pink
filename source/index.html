@@ -21,13 +21,13 @@
   <header class="page-header page-header--opened">
     <div class="page-header__logo-wrapper">
       <a class="page-header__logo-link">
-        <span class="visually-hidden"></span>
+        <span class="visually-hidden">Логотип Пинк</span>
         <svg class="page-header__logo" width="75" height="23" role="img">
           <use xlink:href="#logo-header"></use>
         </svg>
       </a>
       <button class="page-header__toggle page-header__toggle--closed page-header__toggle--nojs" type="button">
-        <span class="visually-hidden">Кнопка переключения</span>
+        <span class="visually-hidden">Кнопка переключения меню</span>
       </button>
     </div>
 
@@ -50,8 +50,8 @@
   </header>
 
   <main>
-    <div class="wrapper">
-      <div class="promo">
+    <div class="relative-wrapper">
+      <article class="promo">
         <h1 class="title promo__title-index">Взгляните на жизнь иначе!</h1>
         <div class="promo__image-wrapper">
           <a href="#">
@@ -71,7 +71,7 @@
             </picture>
           </a>
         </div>
-      </div>
+      </article>
 
       <section class="download">
         <h2 class="download__title">
@@ -112,7 +112,7 @@
 
       <div class="advantages__triangle-wrapper">
         <svg class="advantages__triangle" width="320" height="34" viewbox="0 0 320 34" preserveaspectratio="none">
-          <use xlink:href="#bg-triangle1"></use>
+          <use xlink:href="#clip-advantages"></use>
         </svg>
       </div>
 
@@ -195,36 +195,48 @@
       <svg class="review__quotes" width="79" height="63">
         <use xlink:href="#icon-quotes"></use>
       </svg>
-      <div class="review__author-wrapper">
-        <p class="review__author">Николай Петров</p>
-        <p class="review__author-desc">25 лет, водитель трамвая</p>
+
+      <div class="review__slider slider">
+        <div class="slider__slide">
+          <div class="slider__author-wrapper">
+            <p class="slider__author">Николай Петров</p>
+            <p class="slider__author-desc">25 лет, водитель трамвая</p>
+          </div>
+          <q class="slider__quote">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+            вещи! А еще я
+            познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
+        </div>
+        <div class="slider__buttons">
+          <button class="slider__btn slider__btn--left" type="button">
+            <span class="visually-hidden">Перейти к предыдущему отзыву</span>
+            <svg class="slider__arrow" width="22" height="42">
+              <use xlink:href="#icon-arrow-left"></use>
+            </svg>
+          </button>
+          <button class="slider__btn slider__btn--right" type="button">
+            <span class="visually-hidden">Перейти к следующему отзыву</span>
+            <svg class="slider__arrow" width="22" height="42">
+              <use xlink:href="#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-      <p class="review__quote-wrapper">
-        <svg class="review__arrow-left" width="22" height="42">
-          <use xlink:href="#icon-arrow-left"></use>
-        </svg>
-        <q class="review__quote">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
-          вещи! А еще я
-          познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
-        <svg class="review__arrow-right" width="22" height="42">
-          <use xlink:href="#icon-arrow-right"></use>
-        </svg>
-      </p>
+
 
       <ul class="pagination review__pagination">
         <li class="pagination__item">
           <button class="pagination__button pagination__button--current" type="button">
-            <span class="visually-hidden">Кнопка переключения</span>
+            <span class="visually-hidden">Перейти к отзыву</span>
           </button>
         </li>
         <li class="pagination__item">
           <button class="pagination__button" type="button">
-            <span class="visually-hidden">Кнопка переключения</span>
+            <span class="visually-hidden">Перейти к отзыву</span>
           </button>
         </li>
         <li class="pagination__item">
           <button class="pagination__button" type="button">
-            <span class="visually-hidden">Кнопка переключения</span>
+            <span class="visually-hidden">Перейти к отзыву</span>
           </button>
         </li>
       </ul>
@@ -234,7 +246,7 @@
       <h2 class="visually-hidden">Тарифы</h2>
       <div class="rate__triangle-wrapper">
         <svg class="rate__triangle" width="320" height="26" viewbox="0 0 320 26" preserveaspectratio="none">
-          <use xlink:href="#bg-triangle2"></use>
+          <use xlink:href="#clip-rate"></use>
         </svg>
       </div>
 
@@ -248,7 +260,7 @@
               <span class="table__price">1,99 USD</span>
             </th>
             <th class="table__cell table__offer table__hit">
-              <svg class="table__hit-label" width="74" height="73">
+              <svg class="table__hit-label" width="74" height="74">
                 <use xlink:href="#bg-hit"></use>
               </svg>
               <span class="table__hit-text">ХИТ</span>
@@ -394,7 +406,7 @@
       <article class="map">
         <h3 class="visually-hidden">Карта</h3>
         <svg class="map__triangle" width="320" height="35" viewbox="0 0 320 35" preserveaspectratio="none">
-          <use xlink:href="#bg-triangle3"></use>
+          <use xlink:href="#clip-map"></use>
         </svg>
 
         <a href="#" class="map__link">
@@ -427,7 +439,7 @@
   <footer class="page-footer page-footer--index">
     <div class="page-footer__logo-wrapper">
       <a class="page-footer__logo-link">
-        <span class="visually-hidden"></span>
+        <span class="visually-hidden">Логотип Пинк</span>
         <svg class="page-footer__logo" width="75" height="23" role="img">
           <use xlink:href="#logo-footer"></use>
         </svg>

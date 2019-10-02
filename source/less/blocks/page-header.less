@@ -49,8 +49,8 @@
 
   padding: 0;
   border: 0;
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
 
   background-color: transparent;
   background-position: center center;
@@ -76,11 +76,11 @@
   }
 
   &::before {
-    transform: rotate(45deg);
+    transform: translateX(-2px) rotate(45deg);
   }
 
   &::after {
-    transform: rotate(-45deg);
+    transform: translateX(-2px) rotate(-45deg);
   }
 
   &:hover::before,
@@ -95,16 +95,30 @@
 }
 
 .page-header__toggle--closed {
-  background-image: url("../img/icon-menu-burger.svg");
   width: 55px;
 
-  &:hover {
-    background-image: url("../img/icon-menu-burger-hover.svg");
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 55px;
+    height: 4px;
+
+    background-color: @white;
+    box-shadow: 0 12px 0 0 @white, 0 24px 0 0 @white;
   }
 
-  &:active {
-    background-image: url("../img/icon-menu-burger-hover.svg");
-    opacity: 0.3;
+  &:hover::before {
+    background-color: @red;
+    box-shadow: 0 12px 0 0 @red, 0 24px 0 0 @red;
+  }
+
+  &:active::before {
+    background-color: @red-transparent30;
+    box-shadow: 0 12px 0 0 @red-transparent30, 0 24px 0 0 @red-transparent30;
   }
 }
 
